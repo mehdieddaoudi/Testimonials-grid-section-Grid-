@@ -1,0 +1,251 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 13px;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(192, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.my-project {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "mehdi1 mehdi1 mehdi2 mehdi3 "
+        "mehdi4 mehdi5 mehdi5 mehdi3";
+    width: 1050px;
+    height: auto;
+    gap: 20px;
+
+}
+
+.my-project div {
+    border-radius: 10px;
+}
+
+.mehdi1::after {
+    content: "";
+    width: 34%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+.mehdi1 {
+    grid-area: mehdi1;
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+.mehdi2 {
+    grid-area: mehdi2;
+    background-color: hsl(217, 19%, 35%);
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+/* start mehdi3 mehdi4 */
+.mehdi3 {
+    grid-area: mehdi3;
+    background-color: hsl(0, 0%, 100%);
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.mehdi4 {
+    grid-area: mehdi4;
+    background-color: hsl(0, 0%, 100%);
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* end mehdi3 mehdi4 */
+
+.mehdi5 {
+    grid-area: mehdi5;
+    background-color: hsl(219, 29%, 14%);
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.my-project h2 {
+    margin-top: 0;
+}
+
+.heding {
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.heding .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.mehdi1 .heding .text h3 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.mehdi1 h2 {
+    font-weight: 600;
+    color: white;
+}
+
+.mehdi1 p {
+    color: hsl(0deg 0% 81% / 70%);
+}
+
+.mehdi2 .heding .text h3 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.mehdi2 h2 {
+    font-weight: 600;
+    color: white;
+}
+
+.mehdi2 p {
+    color: hsl(0deg 0% 81% / 70%);
+}
+
+.mehdi5 .heding .text h3 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.mehdi5 h2 {
+    font-weight: 600;
+    color: white;
+}
+
+.mehdi5 p {
+    color: hsl(0deg 0% 81% / 70%);
+}
+
+.mehdi1 .heding .text p {
+    color: hsl(0deg 0% 100% / 50%);
+    margin-top: 0;
+}
+
+.mehdi2 .heding .text p {
+    color: hsl(0deg 0% 100% / 50%);
+    margin-top: 0;
+}
+
+.mehdi5 .heding .text p {
+    color: hsl(0deg 0% 100% / 50%);
+    margin-top: 0;
+}
+
+.mehdi3 .heding .text h3 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.mehdi4 .heding .text h3 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.mehdi3 .heding .text p {
+    margin-top: 0;
+    color: hsl(0deg 0% 80%);
+}
+
+.mehdi4 .heding .text p {
+    margin-top: 0;
+    color: hsl(0deg 0% 81%);
+}
+
+.mehdi3 h2 {
+    font-weight: 600;
+}
+
+.mehdi3 p {
+    color: hsl(0deg 0% 81%);
+}
+
+.mehdi4 h2 {
+    font-weight: 600;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.mehdi4 p {
+    color: hsl(0deg 0% 81%);
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media (max-width:1060px) {
+    .parent {
+        width: 100%;
+        height: auto;
+        background-color: rgb(192, 191, 191);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .my-project {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "mehdi1"
+            "mehdi2"
+            "mehdi4"
+            "mehdi5"
+            "mehdi3";
+        width: 320px;
+        height: auto;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
